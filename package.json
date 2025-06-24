@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Render uchun json-server",
   "main": "index.js",
-  "scripts": {
-    "start": "json-server --watch users.json --port 10000"
-  },
+ "scripts": {
+  "start": "cross-env PORT=$PORT json-server --watch users.json --port $PORT"
+},
+
   "dependencies": {
     "json-server": "^0.17.3"
   }
